@@ -1,0 +1,105 @@
+/* Custom styles that complement Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #1a1a2e; /* Dark blue background from the hero section */
+    color: #e0e0e0; /* Light gray text for contrast */
+}
+
+
+
+.contact-form-button:hover {
+    background-color: #0891B2; /* cyan-600 */
+}
+
+#form-messages.success {
+    color: #10B981; /* green-500 */
+}
+
+#form-messages.error {
+    color: #EF4444; /* red-500 */
+}
+
+/* Animations */
+@keyframes fade-in-down {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse-ring {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+}
+
+.animate-pulse-ring {
+    animation: pulse-ring 2s infinite;
+}
+
+/* General styling for sections to ensure consistent background */
+section {
+    background-color: #1a1a2e; /* Dark blue background */
+    color: #e0e0e0; /* Light gray text */
+}
+
+.animate-fade-in-down {
+    animation: fade-in-down 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+     animation: fade-in 1s ease-out forwards;
+ }
+
+.profile-image-effect {
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.6), 0 0 40px rgba(0, 191, 255, 0.4);
+    border: 3px solid #00bfff;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-image-effect:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.8), 0 0 60px rgba(0, 191, 255, 0.6);
+}
